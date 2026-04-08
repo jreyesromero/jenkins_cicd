@@ -13,7 +13,7 @@ Local Jenkins in Docker for CI/CD against your GitHub repositories (for example 
 Open a terminal and run:
 
 ```bash
-cd /Users/julianre/workspace/personal/jenkins_cicd
+cd ~/workspace/personal/jenkins_cicd
 ```
 
 Build the image (installs Jenkins LTS and plugins from `plugins.txt`):
@@ -72,7 +72,7 @@ Read the one-time **administrator password** (pick one):
 - **From this repository** (so Compose finds `docker-compose.yml`):
 
 ```bash
-cd /Users/julianre/workspace/personal/jenkins_cicd
+cd ~/workspace/personal/jenkins_cicd
 docker compose exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
@@ -103,14 +103,14 @@ If GitHub cannot reach your laptop (no public URL), configure the multibranch jo
 Stop Jenkins (run from this repository, same as other `docker compose` commands):
 
 ```bash
-cd /Users/julianre/workspace/personal/jenkins_cicd
+cd ~/workspace/personal/jenkins_cicd
 docker compose down
 ```
 
 Stop and **delete** Jenkins data (jobs, plugins, credentials stored in the volume):
 
 ```bash
-cd /Users/julianre/workspace/personal/jenkins_cicd
+cd ~/workspace/personal/jenkins_cicd
 docker compose down -v
 ```
 
