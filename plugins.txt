@@ -1,0 +1,6 @@
+# Core Pipeline + Git + GitHub multibranch (install at image build time)
+git
+workflow-aggregator
+github-branch-source
+credentials-binding
+pipeline-model-definition
